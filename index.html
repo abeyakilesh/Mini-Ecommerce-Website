@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abey Mart | Premium Tech</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toast"></div>
+
+    <nav class="navbar">
+      <div class="container nav-flex">
+        <div class="logo" onclick="showSection('home')">
+          Abey<span>Mart</span>.
+        </div>
+
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search phones..."
+            onkeyup="searchProducts()"
+          />
+        </div>
+
+        <div class="nav-links">
+          <div class="nav-item" onclick="showSection('home')">Home</div>
+          <div class="nav-item" onclick="toggleCart()">
+            <i class="fas fa-shopping-bag"></i>
+            <span id="cart-count">0</span>
+          </div>
+          <div class="nav-item user-profile" onclick="handleProfileClick()">
+            <i class="fas fa-user-circle"></i>
+            <span id="username-display">Login</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="app-container">
+      <section id="login-section" class="page-section hidden">
+        <div class="login-card">
+          <h2>Welcome Back</h2>
+          <p>Enter your credentials to access your account.</p>
+          <form onsubmit="handleLogin(event)">
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" placeholder="user@abeymart.com" required />
+            </div>
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" placeholder="••••••" required />
+            </div>
+            <button type="submit" class="primary-btn full-width">
+              Sign In
+            </button>
+          </form>
+          <p class="terms">By logging in, you agree to Abey Mart's Terms.</p>
+        </div>
+      </section>
+
+      <section id="home-section" class="page-section active">
+        <div class="filter-container">
+          <label for="category-select">Select Category:</label>
+          <div class="select-wrapper">
+            <select id="category-select" onchange="filterProducts()">
+              <option value="all">All Products</option>
+              <option value="mobile">Smartphones</option>
+              <option value="laptop">Laptops</option>
+              <option value="headphone">Headphones</option>
+              <option value="watch">Smartwatches</option>
+            </select>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="category-filter">
+          <button class="cat-btn active" onclick="filterCategory('all', this)">
+            All
+          </button>
+          <button class="cat-btn" onclick="filterCategory('Apple', this)">
+            Apple
+          </button>
+          <button class="cat-btn" onclick="filterCategory('Samsung', this)">
+            Samsung
+          </button>
+          <button class="cat-btn" onclick="filterCategory('Google', this)">
+            Google
+          </button>
+          <button class="cat-btn" onclick="filterCategory('Vivo', this)">
+            Vivo
+          </button>
+        </div>
+
+        <div class="container">
+          <div id="product-grid" class="grid-layout"></div>
+        </div>
+      </section>
+
+      <section id="checkout-section" class="page-section hidden">
+        <div class="container checkout-container">
+          <div class="checkout-form">
+            <h2>Checkout</h2>
+            <h3>Shipping Address</h3>
+            <input type="text" placeholder="Full Name" class="checkout-input" />
+            <input
+              type="text"
+              placeholder="Address Line 1"
+              class="checkout-input"
+            />
+            <input type="text" placeholder="City" class="checkout-input" />
+            <input type="text" placeholder="ZIP Code" class="checkout-input" />
+
+            <h3>Payment</h3>
+            <div class="payment-mock">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-amex"></i>
+            </div>
+            <input
+              type="text"
+              placeholder="Card Number"
+              class="checkout-input"
+            />
+            <div class="row">
+              <input type="text" placeholder="MM/YY" class="checkout-input" />
+              <input type="text" placeholder="CVC" class="checkout-input" />
+            </div>
+            <button class="primary-btn full-width" onclick="completeOrder()">
+              Pay & Place Order
+            </button>
+          </div>
+
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="checkout-items"></div>
+            <div class="total-row">
+              <span>Total</span>
+              <span id="checkout-total">₹0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">×</span>
+        <div class="modal-body" id="modal-body-content"></div>
+      </div>
+    </div>
+
+    <div id="cart-sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <h3>Your Cart</h3>
+        <button onclick="toggleCart()">×</button>
+      </div>
+      <div id="cart-items" class="sidebar-body"></div>
+      <div class="sidebar-footer">
+        <div class="subtotal">
+          <span>Total:</span>
+          <span id="cart-total-price">₹0</span>
+        </div>
+        <button class="primary-btn full-width" onclick="goToCheckout()">
+          Checkout
+        </button>
+      </div>
+    </div>
+    <div id="overlay" onclick="toggleCart()"></div>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+      <div class="container footer-flex">
+        <div class="footer-brand">
+          <h4>Abey<span>Mart</span>.</h4>
+          <p>Designed & Built by <strong>Abey Akilesh</strong></p>
+          <span class="copyright">&copy; 2026 All rights reserved.</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:abeyakileshm@gmail.com" class="contact-btn">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+
+          <div class="social-icons">
+            <a
+              href="https://github.com/abeyakilesh"
+              target="_blank"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abey-akilesh-m-2a185b268/"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
