@@ -29,7 +29,7 @@ A fully responsive, frontend e-commerce application built with vanilla JavaScrip
 ├── index.html       # Main structure
 ├── style.css        # Styling and responsive media queries
 └── script.js        # Cart logic and DOM manipulation
-```
+``` 
 
 # Author
 Abey Akilesh M / Full Stack Developer
