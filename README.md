@@ -4,7 +4,10 @@ A fully responsive, frontend e-commerce application built with vanilla JavaScrip
 
 
 # Image
-<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/bc66be6d-9c61-40d0-920b-29d4269789f6" />
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/4517293e-ee98-405f-a1d2-64c3e15922b3" />
+
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/2744aa43-544d-4660-8ece-2c34bc7a1dea" />
+
 
 ---
 
