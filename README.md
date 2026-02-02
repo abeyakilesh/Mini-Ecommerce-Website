@@ -36,4 +36,4 @@ A fully responsive, frontend e-commerce application built with vanilla JavaScrip
 ``` 
 
 # Author
-Abey Akilesh M / Full Stack Developer
+Abey Akilesh M 
