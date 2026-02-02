@@ -4,34 +4,34 @@ const products = [
     // --- MOBILES ---
     { id: 1, category: "mobile", brand: "Apple", name: "iPhone 14 Plus", price: 66999, image: "https://m.media-amazon.com/images/I/61BGE6iu4AL._AC_SL1500_.jpg", specs: "128GB | A15 Bionic" },
     { id: 2, category: "mobile", brand: "Samsung", name: "Galaxy S23 Ultra", price: 124999, image: "https://m.media-amazon.com/images/I/61VfL-aiToL._AC_SL1500_.jpg", specs: "200MP Camera | S-Pen" },
-    { id: 3, category: "mobile", brand: "Google", name: "Pixel 7 Pro", price: 68999, image: "https://m.media-amazon.com/images/I/51G+E+-yK+L._AC_SL1000_.jpg", specs: "128GB | Tensor G2" },
+    { id: 3, category: "mobile", brand: "Google", name: "Pixel 7 Pro", price: 68999, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dihOMfP1BLF626cosyLmfxjFTsWEpHHCLQ&s", specs: "128GB | Tensor G2" },
     { id: 4, category: "mobile", brand: "OnePlus", name: "OnePlus 11R", price: 39999, image: "https://m.media-amazon.com/images/I/613SAOPmLeL._AC_SL1500_.jpg", specs: "16GB RAM | 100W Charging" },
     { id: 5, category: "mobile", brand: "Vivo", name: "Vivo X90 Pro", price: 84999, image: "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_SL1200_.jpg", specs: "Zeiss 1-inch Sensor" },
-    { id: 6, category: "mobile", brand: "Nothing", name: "Phone (2)", price: 44999, image: "https://m.media-amazon.com/images/I/71Ab1KaeuPL._AC_SL1500_.jpg", specs: "Glyph Interface | 50MP" },
+    { id: 6, category: "mobile", brand: "Nothing", name: "Phone (2)", price: 44999, image: "https://img-prd-pim.poorvika.com/product/nothing-phone-2a-plus-5g-grey-256gb-8gb-ram-back-view.png", specs: "Glyph Interface | 50MP" },
 
     // --- LAPTOPS ---
     { id: 7, category: "laptop", brand: "Apple", name: "MacBook Air M2", price: 114900, image: "https://m.media-amazon.com/images/I/710TJuHTMhL._AC_SL1500_.jpg", specs: "M2 Chip | 13.6-inch Retina" },
-    { id: 8, category: "laptop", brand: "Dell", name: "XPS 13 Plus", price: 164990, image: "https://m.media-amazon.com/images/I/61-g1+L2gzL._AC_SL1000_.jpg", specs: "OLED Touch | i7 12th Gen" },
-    { id: 9, category: "laptop", brand: "HP", name: "Spectre x360", price: 145000, image: "https://m.media-amazon.com/images/I/615jX1yLwJL._AC_SL1000_.jpg", specs: "2-in-1 Convertible" },
-    { id: 10, category: "laptop", brand: "Asus", name: "ROG Zephyrus G14", price: 149990, image: "https://m.media-amazon.com/images/I/815uX7Ld9+L._AC_SL1500_.jpg", specs: "Ryzen 9 | RTX 4060" },
-    { id: 11, category: "laptop", brand: "Lenovo", name: "ThinkPad X1 Carbon", price: 135000, image: "https://m.media-amazon.com/images/I/61A317+p+BL._AC_SL1080_.jpg", specs: "Business Flagship | Carbon Fiber" },
-    { id: 12, category: "laptop", brand: "Acer", name: "Predator Helios", price: 119999, image: "https://m.media-amazon.com/images/I/71toF+p0BBL._AC_SL1500_.jpg", specs: "Core i9 | Gaming Beast" },
+    { id: 8, category: "laptop", brand: "Dell", name: "XPS 13 Plus", price: 164990, image: "https://m.media-amazon.com/images/I/61NqIsCqIuL._AC_UF1000,1000_QL80_.jpg", specs: "OLED Touch | i7 12th Gen" },
+    { id: 9, category: "laptop", brand: "HP", name: "Spectre x360", price: 145000, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_DTXQyAFp-iAo66kvf4Z76BlwOjpadN8VA&s", specs: "2-in-1 Convertible" },
+    { id: 10, category: "laptop", brand: "Asus", name: "ROG Zephyrus G14", price: 149990, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbufi7HBr-88SPCafMBzXFObT-JPP7hTU5-Q&s", specs: "Ryzen 9 | RTX 4060" },
+    { id: 11, category: "laptop", brand: "Lenovo", name: "ThinkPad X1 Carbon", price: 135000, image: "https://images-cdn.ubuy.co.in/664585b39d466e64d77e7e30-lenovo-gen-12-thinkpad-x1-carbon-laptop.jpg", specs: "Business Flagship | Carbon Fiber" },
+    { id: 12, category: "laptop", brand: "Acer", name: "Predator Helios", price: 119999, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMbPp1gWOjtOLIM7ECe8Wuq76j1amy4XRhA&s", specs: "Core i9 | Gaming Beast" },
 
     // --- HEADPHONES ---
     { id: 13, category: "headphone", brand: "Sony", name: "Sony WH-1000XM5", price: 29990, image: "https://m.media-amazon.com/images/I/51SKmu2G9FL._AC_SL1000_.jpg", specs: "Best Noise Cancellation" },
     { id: 14, category: "headphone", brand: "Apple", name: "AirPods Max", price: 59900, image: "https://m.media-amazon.com/images/I/81jqUPkIVRL._AC_SL1500_.jpg", specs: "Spatial Audio | Premium Build" },
     { id: 15, category: "headphone", brand: "Bose", name: "QC 45", price: 24900, image: "https://m.media-amazon.com/images/I/51JbsHSktkL._AC_SL1500_.jpg", specs: "Comfort King" },
-    { id: 16, category: "headphone", brand: "Sennheiser", name: "Momentum 4", price: 27990, image: "https://m.media-amazon.com/images/I/61D4Z3y0EUL._AC_SL1500_.jpg", specs: "60Hr Battery Life" },
-    { id: 17, category: "headphone", brand: "JBL", name: "Tour One M2", price: 19999, image: "https://m.media-amazon.com/images/I/61Kq-9qB+jL._AC_SL1500_.jpg", specs: "Adaptive ANC" },
-    { id: 18, category: "headphone", brand: "Marshall", name: "Major IV", price: 11999, image: "https://m.media-amazon.com/images/I/71Iy+9Q+i1L._AC_SL1000_.jpg", specs: "Iconic Design | 80Hr Battery" },
+    { id: 16, category: "headphone", brand: "Sennheiser", name: "Momentum 4", price: 27990, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4MJ1RAfX1U3RSIcCCd5A5ZQpjgU1aPgB_w&s", specs: "60Hr Battery Life" },
+    { id: 17, category: "headphone", brand: "JBL", name: "Tour One M2", price: 19999, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAx-K8vJFTwow9z-ScVvT4lK1NZhGPIqiPLw&s", specs: "Adaptive ANC" },
+    { id: 18, category: "headphone", brand: "Marshall", name: "Major IV", price: 11999, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIJiu8ce0EpeyiyL-QgW0D5z5ZmZXWHd5ww&s", specs: "Iconic Design | 80Hr Battery" },
 
     // --- WATCHES ---
     { id: 19, category: "watch", brand: "Apple", name: "Watch Ultra 2", price: 89900, image: "https://m.media-amazon.com/images/I/71XMTLtZd5L._AC_SL1500_.jpg", specs: "Titanium | Action Button" },
-    { id: 20, category: "watch", brand: "Samsung", name: "Galaxy Watch 6", price: 29999, image: "https://m.media-amazon.com/images/I/61N+615Y0+L._AC_SL1500_.jpg", specs: "Rotating Bezel | WearOS" },
-    { id: 21, category: "watch", brand: "Fossil", name: "Gen 6", price: 23995, image: "https://m.media-amazon.com/images/I/51+6L40rLJL._AC_SL1000_.jpg", specs: "Classic Design" },
-    { id: 22, category: "watch", brand: "Garmin", name: "Fenix 7", price: 78990, image: "https://m.media-amazon.com/images/I/61b7l4tX7EL._AC_SL1500_.jpg", specs: "Solar Charging | Rugged" },
-    { id: 23, category: "watch", brand: "Amazfit", name: "GTR 4", price: 16999, image: "https://m.media-amazon.com/images/I/618m4Y3sWFL._AC_SL1500_.jpg", specs: "14-Day Battery" },
-    { id: 24, category: "watch", brand: "Boat", name: "Lunar Connect", price: 2999, image: "https://m.media-amazon.com/images/I/61F0Y-g+vGL._AC_SL1500_.jpg", specs: "Budget King | AMOLED" }
+    { id: 20, category: "watch", brand: "Samsung", name: "Galaxy Watch 6", price: 29999, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZoSeIxlosfOGVVCGaBk3H7Q9BbJ6fOVUAEQ&s", specs: "Rotating Bezel | WearOS" },
+    { id: 21, category: "watch", brand: "Fossil", name: "Gen 6", price: 23995, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlOVNnun_XvxcHMuVn26lbZhXiNH1VDItqLw&s", specs: "Classic Design" },
+    { id: 22, category: "watch", brand: "Garmin", name: "Fenix 7", price: 78990, image: "https://www.garmin.com.my/m/my/g/products/fenix-7-sapphire-solar-whitestone-cf-lg.jpg", specs: "Solar Charging | Rugged" },
+    { id: 23, category: "watch", brand: "Amazfit", name: "GTR 4", price: 16999, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgwcmOqJZfVlTZVWhvHbuV3PrY7CWiWr5_w&s", specs: "14-Day Battery" },
+    { id: 24, category: "watch", brand: "Boat", name: "Lunar Connect", price: 2999, image: "https://m.media-amazon.com/images/I/711swNAK07L._AC_UF1000,1000_QL80_.jpg", specs: "Budget King | AMOLED" }
 ];
 
 /* ================= NEW DROPDOWN FILTER LOGIC ================= */
