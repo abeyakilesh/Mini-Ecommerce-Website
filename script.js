@@ -38,7 +38,7 @@ const products = [
 function filterProducts() {
     const selectedCategory = document.getElementById('category-select').value;
     
-    if (selectedCategory === 'all') {
+    if (selectedCategory === 'all') {``
         renderProducts(products);
     } else {
         // This filters the "products" array based on the "category" property
