@@ -17,7 +17,7 @@ A fully responsive, frontend e-commerce application built with vanilla JavaScrip
 * **Dynamic Product Listing:** Products are rendered dynamically using JavaScript loops and objects.
 * **Shopping Cart Logic:** Users can add items, remove items, and view their selected products.
 * **Real-time Calculations:** The total price updates automatically as items are modified in the cart.
-* **Responsive Design:** Optimized for mobile, tablet, and desktop views using modern CSS.
+* **Responsive Design:** Optimized for mobile, tablet, and desktop views using modern CSS. 
 * **Interactive UI:** Smooth transitions and hover effects for a polished user experience.
 
 ## Tech Stack
