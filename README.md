@@ -12,7 +12,7 @@ A fully responsive, frontend e-commerce application built with vanilla JavaScrip
 
 ---
 
-## Features
+## Features 
 
 * **Dynamic Product Listing:** Products are rendered dynamically using JavaScript loops and objects. 
 * **Shopping Cart Logic:** Users can add items, remove items, and view their selected products.
