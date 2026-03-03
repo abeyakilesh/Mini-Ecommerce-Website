@@ -1,4 +1,4 @@
-# Mini E-Commerce Website
+# Mini E-Commerce Website 
 
 A fully responsive, frontend e-commerce application built with vanilla JavaScript. This project demonstrates DOM manipulation, state management for the shopping cart, and dynamic product rendering. 
 
